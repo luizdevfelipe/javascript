@@ -1,0 +1,52 @@
+body{
+    background: #5174a1;
+    font: normal 15pt Arial;
+    cursor: default;
+}
+header{
+    color: white;
+    text-align: center;
+    
+    
+}
+mark{
+    background-color: rgba(48, 48, 48, 0.5);
+    color: white;
+    border-radius: 8px;
+    padding: 4px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.616);
+}
+section{
+    background: #b45d5d;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 6px 6px 50px rgba(0, 0, 0, 0.493)
+}
+div{
+    text-align: center;
+    padding: 8px;
+}
+footer{
+    color: white;
+    margin: auto;    
+    text-align: center;
+    font-style: italic;
+    box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.616);
+    width: 110px;
+    background-color: rgba(0, 0, 0, 0.034);       
+}
+a{
+    color: white;
+}
+#play{      
+    border-radius: 15px;    
+    cursor: pointer;
+    padding: 8px;    
+}
+#buttontxt{
+    text-align: center;
+    color: white;
+    font-size: 12pt;    
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <title>Feliz ano Novo!</title>
+    <style>
+        body{            
+            text-align: center;
+            font: normal 10pt Arial;                           
+        }
+        mark{
+            background: rgba(80, 80, 80, 0.363);
+            color: rgb(255, 255, 255);   
+            border-radius: 8px;         
+            padding: 4px;
+            box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.5);
+        }
+       
+        p{
+            margin-top: 0px;
+            font: normal 12pt Calibri;
+        }
+        div{           
+            width: 600px;
+            margin: auto;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0px 0px 17px 3px rgba(0, 0, 0, 0.39);
+        }
+        
+    </style>
+</head>
+<body>
+    <h1 id="h1">
+
+    </h1>
+    <div id="txt">  
+
+    </div>
+
+    <script>
+        var d = new Date()
+        let data = [d.getDate(), d.getMonth()]   // 1,0  1 de janeiro
+        var div = document.getElementById('txt')
+        var h1 = document.getElementById('h1')
+        
+        if (data == '1,0'){            
+            h1.innerHTML = '<h1><mark>Happy New Year!! &#x1F973; &#x1F973;</mark></h1>'            
+            div.innerHTML += '<img src="imagens/fogos.jpg" alt="fogos">'
+            div.innerHTML += '<p><a href="https://wallpaperscraft.com/wallpaper/salute_night_fireworks_beautiful_119033" target="_blank" rel="nofollow">Imagem</a></p>'   
+            div.style.background = '#7983dd' 
+            document.body.style.background = '#5a91da83'
+        }else{
+            h1.innerHTML = '<h1><mark>Ops... Volte dia 01 de Janeiro.</mark></h1>'
+            div.innerHTML += '<img src="imagens/lofi.jpg" alt="lofi">'
+            div.innerHTML += '<p><a href="https://www.youtube.com/watch?v=tgI6PjEq0O8&ab_channel=TheJazzHopCaf%C3%A9" target="_blank" rel="nofollow">Imagem</a></p>'    
+            div.style.background = '#b58de4'       
+            document.body.style.background = '#d8bfd8'
+        }  
+    </script>
+</body>
+</html>
