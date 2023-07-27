@@ -4,20 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Nome</title>
 </head>
-    <style>
+    <style>       
         body{
+            background-color: rgb(105, 105, 173);   
+            color: white;  
             font: normal 20pt Arial;
         }
+        p{
+            color: rgb(255, 212, 22);
+        }   
     </style>
 <body>
     
     <script>
         var nome = prompt('Qual é o seu nome?')
-        document.write(`Olá, <strong>${nome}</strong>! Seu nome tem ${nome.length} letras. <br>`)
-        document.write(`Seu nome em maiúsculas é ${nome.toLocaleUpperCase()}. <br>`)
-        document.write(`Seu nome em minúsculas é ${nome.toLowerCase()}.`)
+        document.write(`<p>Olá, <strong>${nome}</strong>! Seu nome tem ${nome.length} letras. </p>`)
+        document.write(`<p>Seu nome em maiúsculas é ${nome.toUpperCase()}. </p>`)
+        document.write(`<p>Seu nome em minúsculas é ${nome.toLowerCase()}.</p>`)
+
+        document.write('<h1> Seja bem-vindo! ' + nome + ' </h1>')
     </script>
 </body>
 </html>
