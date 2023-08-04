@@ -19,7 +19,7 @@
     </style>
 </head>
 <body>
-    <div id="area">
+    <div id="area" onmousewheel="roda()">
         Interaja...
     </div>
 
@@ -41,6 +41,11 @@
         function sair(){
             a.innerText = 'Saiu!'
             a.style.background = 'green'
+        }
+
+        function roda(){
+            a.innerText = 'Girando...'
+            a.style.background = 'orange'
         }
     </script>
 
