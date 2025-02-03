@@ -1,0 +1,12 @@
+services:
+  app:
+    image: jwt-auth
+    build:
+      context: .
+      dockerfile: Dockerfile      
+    container_name: jwt-auth
+    working_dir: /app
+    volumes:
+      - .:/app
+    ports:
+      - "3000:3000"
