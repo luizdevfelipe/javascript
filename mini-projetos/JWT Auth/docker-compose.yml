@@ -1,12 +1,20 @@
 services:
-  app:
-    image: jwt-auth
-    build:
-      context: .
-      dockerfile: Dockerfile      
-    container_name: jwt-auth
+  app1:
+    image: node:latest
+    container_name: jwt-auth-app1
     working_dir: /app
     volumes:
       - .:/app
     ports:
       - "3000:3000"
+    command: ["npm", "start"]
+
+  app2:
+    image: node:latest
+    container_name: jwt-auth-app2
+    working_dir: /app
+    volumes:
+      - .:/app
+    ports:
+      - "4000:4000"
+    command: ["npm", "run", "startSecond"]
